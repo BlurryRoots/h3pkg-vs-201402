@@ -3,7 +3,7 @@
 # callback for fetching the raw package data
 function h3pkg_script_get_raw () {
 	#
-	local PUB_PATH="/home/pub/prof/klauck_christopgh/VS"
+	local PUB_PATH="/home/pub/prof/klauck_christop/VS"
 
 	rsync -aP "${H3PKG_USER}@${H3PKG_REMOTE_HOME}:${PUB_PATH}" "${H3PKG_PACKAGE_HOME}/.cache"
 
