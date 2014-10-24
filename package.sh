@@ -20,9 +20,9 @@ function h3pkg_script_build_package () {
 		cd vs && {
 			mkdir -p doc lab etc
 
-			cp ${raw_base}/abgabe_aivsp.html doc
-			cp ${raw_base}/BA_Erlang.pdf doc
-			cp ${raw_base}/Entwurf.pdf doc
+			cp -aR ${raw_base}/abgabe_aivsp.html doc
+			cp -aR ${raw_base}/BA_Erlang.pdf doc
+			cp -aR ${raw_base}/Entwurf.pdf doc
 			#cp ${H3PKG_PACKAGE_HOME}/.cache/VS/ doc
 			mkdir -p etc/coulouris
 			unzip ${raw_base}/VSloesung_Coulouris.zip -d etc/coulouris
